@@ -36,6 +36,9 @@ include "string_list.php";
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
+    
+    
+
 
 
 </head>
@@ -43,6 +46,7 @@ include "string_list.php";
 
 
 <body id="page-top" class="index">
+
 
 
     <!-- Navigation -->
@@ -99,6 +103,8 @@ include "string_list.php";
             </div>
         </div>
     </header>
+
+    
      <!-- 공부방 소개 부분 -->
     <section  class="success" id="study_info">
         <div class="container">
@@ -149,67 +155,86 @@ include "string_list.php";
                     <hr class="star-primary">
                 </div>
             </div>
+
             <div class="row">
                 <div class="col-sm-4 portfolio-item">
-                    <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
+                    <a class="portfolio-link" id="btn">
                         <div class="caption">
                             <div class="caption-content">
                                 <i class="fa fa-search-plus fa-3x"></i>
                             </div>
                         </div>
-                        <img src="img/portfolio/cabin.png" class="img-responsive" alt="">
+                        <img src="upload/3.jpg" class="img-responsive" alt="">
                     </a>
                 </div>
+                <div id="question" style="display:none; "> 
+					<img src="upload/3.jpg" class="img-responsive" alt="">
+				</div>
                 <div class="col-sm-4 portfolio-item">
-                    <a href="#portfolioModal2" class="portfolio-link" data-toggle="modal">
+                    <a class="portfolio-link" id="btn2">
                         <div class="caption">
                             <div class="caption-content">
                                 <i class="fa fa-search-plus fa-3x"></i>
                             </div>
                         </div>
-                        <img src="img/portfolio/cake.png" class="img-responsive" alt="">
+                        <img src="upload/4.jpg" class="img-responsive" alt="">
                     </a>
                 </div>
+                <div id="question2" style="display:none; "> 
+					<img src="upload/4.jpg" class="img-responsive" alt="">
+				</div>
                 <div class="col-sm-4 portfolio-item">
-                    <a href="#portfolioModal3" class="portfolio-link" data-toggle="modal">
+                    <a class="portfolio-link" id="btn3">
                         <div class="caption">
                             <div class="caption-content">
                                 <i class="fa fa-search-plus fa-3x"></i>
                             </div>
                         </div>
-                        <img src="img/portfolio/circus.png" class="img-responsive" alt="">
+                        <img src="upload/5.jpg" class="img-responsive" alt="">
                     </a>
                 </div>
+				<div id="question3" style="display:none; "> 
+					<img src="upload/5.jpg" class="img-responsive" alt="">
+				</div>
                 <div class="col-sm-4 portfolio-item">
-                    <a href="#portfolioModal4" class="portfolio-link" data-toggle="modal">
+                    <a class="portfolio-link" id="btn4">
                         <div class="caption">
                             <div class="caption-content">
                                 <i class="fa fa-search-plus fa-3x"></i>
                             </div>
                         </div>
-                        <img src="img/portfolio/game.png" class="img-responsive" alt="">
+                        <img src="upload/6.jpg" class="img-responsive" alt="">
                     </a>
                 </div>
+				<div id="question4" style="display:none; "> 
+					<img src="upload/6.jpg" class="img-responsive" alt="">
+				</div>
                 <div class="col-sm-4 portfolio-item">
-                    <a href="#portfolioModal5" class="portfolio-link" data-toggle="modal">
+                    <a class="portfolio-link" id="btn5">
                         <div class="caption">
                             <div class="caption-content">
                                 <i class="fa fa-search-plus fa-3x"></i>
                             </div>
                         </div>
-                        <img src="img/portfolio/safe.png" class="img-responsive" alt="">
+                        <img src="upload/7.jpg" class="img-responsive" alt="">
                     </a>
                 </div>
+				<div id="question5" style="display:none; "> 
+					<img src="upload/7.jpg" class="img-responsive" alt="">
+				</div>
                 <div class="col-sm-4 portfolio-item">
-                    <a href="#portfolioModal6" class="portfolio-link" data-toggle="modal">
+                    <a class="portfolio-link" id="btn6">
                         <div class="caption">
                             <div class="caption-content">
                                 <i class="fa fa-search-plus fa-3x"></i>
                             </div>
                         </div>
-                        <img src="img/portfolio/submarine.png" class="img-responsive" alt="">
+                        <img src="upload/8.jpg" class="img-responsive" alt="">
                     </a>
                 </div>
+				<div id="question6" style="display:none; "> 
+					<img src="upload/8.jpg" class="img-responsive" alt="">
+				</div>
             </div>
         </div>
     </section>
@@ -344,6 +369,9 @@ include "string_list.php";
         </div>
     </footer>
 
+    
+    
+
     <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
     <div class="scroll-top page-scroll hidden-sm hidden-xs hidden-lg hidden-md">
         <a class="btn btn-primary" href="#page-top">
@@ -366,6 +394,120 @@ include "string_list.php";
 
     <!-- Theme JavaScript -->
     <script src="js/freelancer.min.js"></script>
+	<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+	<script type="text/javascript" src="js/jquery.blockUI.js"></script>
+	<script>
+	$(function(){
+		$("#btn").click(function(){
+			//잠깐 나타났다가 사라지는 함수
+			//$.growlUI('타이틀', '내용'); 
+			$.blockUI({ 
+				    //html태그를 문자열로 적용해도 무관함
+				    //message : "<table><tr><td>태그테스트</td></tr><table>"
+					message: $('#question')
+					//css 설정
+				   ,css: { 
+					   left: '35%',
+						top: '33%'
+						    
+					}
+					//모달창 외부 클릭시 닫기
+				   ,onOverlayClick: $.unblockUI 
+			});	
+		})
+				$("#btn2").click(function(){
+			//잠깐 나타났다가 사라지는 함수
+			//$.growlUI('타이틀', '내용'); 
+			$.blockUI({ 
+				    //html태그를 문자열로 적용해도 무관함
+				    //message : "<table><tr><td>태그테스트</td></tr><table>"
+					message: $('#question2')
+					//css 설정
+				   ,css: { 
+					   left: '35%',
+						top: '33%'
+						    
+					}
+					//모달창 외부 클릭시 닫기
+				   ,onOverlayClick: $.unblockUI 
+			});	
+		})
+				$("#btn3").click(function(){
+			//잠깐 나타났다가 사라지는 함수
+			//$.growlUI('타이틀', '내용'); 
+			$.blockUI({ 
+				    //html태그를 문자열로 적용해도 무관함
+				    //message : "<table><tr><td>태그테스트</td></tr><table>"
+					message: $('#question3')
+					//css 설정
+				   ,css: { 
+					   left: '35%',
+						top: '33%'
+						    
+					}
+					//모달창 외부 클릭시 닫기
+				   ,onOverlayClick: $.unblockUI 
+			});	
+		})
+				$("#btn4").click(function(){
+			//잠깐 나타났다가 사라지는 함수
+			//$.growlUI('타이틀', '내용'); 
+			$.blockUI({ 
+				    //html태그를 문자열로 적용해도 무관함
+				    //message : "<table><tr><td>태그테스트</td></tr><table>"
+					message: $('#question4')
+					//css 설정
+				   ,css: { 
+					   left: '35%',
+						top: '33%'
+						    
+					}
+					//모달창 외부 클릭시 닫기
+				   ,onOverlayClick: $.unblockUI 
+			});	
+		})
+				$("#btn5").click(function(){
+			//잠깐 나타났다가 사라지는 함수
+			//$.growlUI('타이틀', '내용'); 
+			$.blockUI({ 
+				    //html태그를 문자열로 적용해도 무관함
+				    //message : "<table><tr><td>태그테스트</td></tr><table>"
+					message: $('#question5')
+					//css 설정
+				   ,css: { 
+					   left: '35%',
+						top: '33%'
+						    
+					}
+					//모달창 외부 클릭시 닫기
+				   ,onOverlayClick: $.unblockUI 
+			});	
+		})
+						$("#btn6").click(function(){
+			//잠깐 나타났다가 사라지는 함수
+			//$.growlUI('타이틀', '내용'); 
+			$.blockUI({ 
+				    //html태그를 문자열로 적용해도 무관함
+				    //message : "<table><tr><td>태그테스트</td></tr><table>"
+					message: $('#question6')
+					//css 설정
+				   ,css: { 
+					   left: '35%',
+						top: '33%'
+						    
+					}
+					//모달창 외부 클릭시 닫기
+				   ,onOverlayClick: $.unblockUI 
+			});	
+		})
+
+})
+	</script>
+
+
+    
+    
+    
 
 </body>
 

@@ -182,64 +182,77 @@ include "dbconn.php";
             </div>
             <div class="row">
                 <div class="col-sm-4 portfolio-item">
-                    <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
-                        <div class="caption">
-                            <div class="caption-content">
-                                <i class="fa fa-search-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="img/portfolio/cabin.png" class="img-responsive" alt="">
-                    </a>
+
+
+                        <img src="upload/3.jpg" class="img-responsive" alt="">
+							<form id="ajaxform2" enctype="multipart/form-data" action="test.php" method="post">
+								 <!-- 8.클라이언트쪽 업로드 제한용량을 설정함-->
+								 <input type="file" name="upload2" />
+								<div align="center"><input type="button" id="upload_form2" value="uplode" /></div>
+								<input type="hidden" name="upload_check2" value="true" />
+								<input type="hidden" name="test2" value="3" />
+							</form>
+
                 </div>
                 <div class="col-sm-4 portfolio-item">
-                    <a href="#portfolioModal2" class="portfolio-link" data-toggle="modal">
-                        <div class="caption">
-                            <div class="caption-content">
-                                <i class="fa fa-search-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="img/portfolio/cake.png" class="img-responsive" alt="">
-                    </a>
+
+                        <img src="upload/4.jpg" class="img-responsive" alt="">
+							<form  id="ajaxform3" enctype="multipart/form-data" action="test.php" method="post">
+								 <!-- 8.클라이언트쪽 업로드 제한용량을 설정함-->
+								 <input type="file" name="upload3" />
+								<div align="center"><input type="button" id="upload_form3" value="uplode" /></div>
+								<input type="hidden" name="upload_check3" value="true" />
+								<input type="hidden" name="test3" value="4" />
+							</form>
+
                 </div>
                 <div class="col-sm-4 portfolio-item">
-                    <a href="#portfolioModal3" class="portfolio-link" data-toggle="modal">
-                        <div class="caption">
-                            <div class="caption-content">
-                                <i class="fa fa-search-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="img/portfolio/circus.png" class="img-responsive" alt="">
-                    </a>
+
+                        <img src="upload/5.jpg" class="img-responsive" alt="">
+							<form  id="ajaxform4" enctype="multipart/form-data" action="test.php" method="post">
+								 <!-- 8.클라이언트쪽 업로드 제한용량을 설정함-->
+								 <input type="file" name="upload4" />
+								<div align="center"><input type="button" id="upload_form4" value="uplode" /></div>
+								<input type="hidden" name="upload_check4" value="true" />
+								<input type="hidden" name="test4" value="5" />
+							</form>
+
                 </div>
                 <div class="col-sm-4 portfolio-item">
-                    <a href="#portfolioModal4" class="portfolio-link" data-toggle="modal">
-                        <div class="caption">
-                            <div class="caption-content">
-                                <i class="fa fa-search-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="img/portfolio/game.png" class="img-responsive" alt="">
-                    </a>
+      
+                        <img src="upload/6.jpg" class="img-responsive" alt="">
+							<form  id="ajaxform5" enctype="multipart/form-data" action="test.php" method="post">
+								 <!-- 8.클라이언트쪽 업로드 제한용량을 설정함-->
+								 <input type="file" name="upload5" />
+								<div align="center"><input type="button" id="upload_form5" value="uplode" /></div>
+								<input type="hidden" name="upload_check5" value="true" />
+								<input type="hidden" name="test5" value="6" />
+							</form>
+
                 </div>
                 <div class="col-sm-4 portfolio-item">
-                    <a href="#portfolioModal5" class="portfolio-link" data-toggle="modal">
-                        <div class="caption">
-                            <div class="caption-content">
-                                <i class="fa fa-search-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="img/portfolio/safe.png" class="img-responsive" alt="">
-                    </a>
+
+                        <img src="upload/7.jpg" class="img-responsive" alt="">
+							<form  id="ajaxform6" enctype="multipart/form-data" action="test.php" method="post">
+								 <!-- 8.클라이언트쪽 업로드 제한용량을 설정함-->
+								 <input type="file" name="upload6" />
+								<div align="center"><input type="button" id="upload_form6" value="uplode" /></div>
+								<input type="hidden" name="upload_check6" value="true" />
+								<input type="hidden" name="test6" value="7" />
+							</form>
+
                 </div>
                 <div class="col-sm-4 portfolio-item">
-                    <a href="#portfolioModal6" class="portfolio-link" data-toggle="modal">
-                        <div class="caption">
-                            <div class="caption-content">
-                                <i class="fa fa-search-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="img/portfolio/submarine.png" class="img-responsive" alt="">
-                    </a>
+ 
+                        <img src="upload/8.jpg" class="img-responsive" alt="">
+							<form  id="ajaxform7" enctype="multipart/form-data" action="test.php" method="post">
+								 <!-- 8.클라이언트쪽 업로드 제한용량을 설정함-->
+								 <input type="file" name="upload7" />
+								<div align="center"><input type="button" id="upload_form7" value="uplode" /></div>
+								<input type="hidden" name="upload_check7" value="true" />
+								<input type="hidden" name="test7" value="8" />
+							</form>
+
                 </div>
             </div>
         </div>
@@ -263,7 +276,7 @@ include "dbconn.php";
     <!-- Theme JavaScript -->
     <script src="js/freelancer.min.js"></script>
     
-            <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 	<script type="text/javascript">
 	$(function(){
 		$('#study_info_update').click(function(){
@@ -329,9 +342,115 @@ include "dbconn.php";
 	      	  });
 
 	        });
+		$("#upload_form2").click(function(){
+	      	  var formData = new FormData();
+	      	  formData.append("upload", $("input[name=upload2]")[0].files[0]);
+	      	  formData.append("upload_check", $("input[name=upload_check2]").val());
+	      	  formData.append("test", $("input[name=test2]").val());
+	      	 
+	      	  $.ajax({
+	      	    url: 'test.php',
+	      	    data: formData,
+	      	    processData: false,
+	      	    contentType: false,
+	      	    type: 'POST',
+	      	    success: function(data){
+	      	    	alert("EE");
+	      	    }
+	      	  });
 
+	        });
+		$("#upload_form3").click(function(){
+	      	  var formData = new FormData();
+	      	  formData.append("upload", $("input[name=upload3]")[0].files[0]);
+	      	  formData.append("upload_check", $("input[name=upload_check3]").val());
+	      	  formData.append("test", $("input[name=test3]").val());
+	      	 
+	      	  $.ajax({
+	      	    url: 'test.php',
+	      	    data: formData,
+	      	    processData: false,
+	      	    contentType: false,
+	      	    type: 'POST',
+	      	    success: function(data){
+	      	    	alert("EE");
+	      	    }
+	      	  });
 
+	        });
+		$("#upload_form4").click(function(){
+	      	  var formData = new FormData();
+	      	  formData.append("upload", $("input[name=upload4]")[0].files[0]);
+	      	  formData.append("upload_check", $("input[name=upload_check4]").val());
+	      	  formData.append("test", $("input[name=test4]").val());
+	      	 
+	      	  $.ajax({
+	      	    url: 'test.php',
+	      	    data: formData,
+	      	    processData: false,
+	      	    contentType: false,
+	      	    type: 'POST',
+	      	    success: function(data){
+	      	    	alert("EE");
+	      	    }
+	      	  });
 
+	        });
+		$("#upload_form5").click(function(){
+	      	  var formData = new FormData();
+	      	  formData.append("upload", $("input[name=upload5]")[0].files[0]);
+	      	  formData.append("upload_check", $("input[name=upload_check5]").val());
+	      	  formData.append("test", $("input[name=test5]").val());
+	      	 
+	      	  $.ajax({
+	      	    url: 'test.php',
+	      	    data: formData,
+	      	    processData: false,
+	      	    contentType: false,
+	      	    type: 'POST',
+	      	    success: function(data){
+	      	    	alert("EE");
+	      	    }
+	      	  });
+
+	        });
+		$("#upload_form6").click(function(){
+	      	  var formData = new FormData();
+	      	  formData.append("upload", $("input[name=upload6]")[0].files[0]);
+	      	  formData.append("upload_check", $("input[name=upload_check6]").val());
+	      	  formData.append("test", $("input[name=test6]").val());
+	      	 
+	      	  $.ajax({
+	      	    url: 'test.php',
+	      	    data: formData,
+	      	    processData: false,
+	      	    contentType: false,
+	      	    type: 'POST',
+	      	    success: function(data){
+	      	    	alert("EE");
+	      	    }
+	      	  });
+
+	        });
+
+		$("#upload_form7").click(function(){
+	      	  var formData = new FormData();
+	      	  formData.append("upload", $("input[name=upload7]")[0].files[0]);
+	      	  formData.append("upload_check", $("input[name=upload_check7]").val());
+	      	  formData.append("test", $("input[name=test7]").val());
+	      	 
+	      	  $.ajax({
+	      	    url: 'test.php',
+	      	    data: formData,
+	      	    processData: false,
+	      	    contentType: false,
+	      	    type: 'POST',
+	      	    success: function(data){
+	      	    	alert("EE");
+	      	    }
+	      	  });
+
+	        });
 
 
         
